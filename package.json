@@ -1,0 +1,42 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "scripts": {
+    "sample": "node ./node_modules/cucumber/bin/cucumber-js features/ -f json:reports/cucumber_report.json --tags '(@Course and @Assessment) and (not @wip)'",
+    "run": "node ./node_modules/cucumber/bin/cucumber-js features/ -f json:reports/cucumber_report.json --tags '(@Course and @Assessment) and (not @wip)'",
+    "icbc": "node ./node_modules/cucumber/bin/cucumber-js features/ICBC/tests/Carrito.feature -f json:reports/cucumber_report.json"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "axe-webdriverjs": "latest",
+    "chai": "latest",
+    "chai-sorted": "latest",
+    "chromedriver": "latest",
+    "csvtojson": "latest",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "latest",
+    "faker": "latest",
+    "geckodriver": "latest",
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^8.0.0",
+    "imap-simple": "latest",
+    "jsonfile": "latest",
+    "jsonwebtoken": "latest",
+    "mailparser": "latest",
+    "minimist": "latest",
+    "nodemailer": "latest",
+    "selenium-webdriver": "latest",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "^2.20.2",
+    "gherkin-lint": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "prettier": "^2.0.4"
+  }
+}

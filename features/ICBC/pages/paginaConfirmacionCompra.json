@@ -1,0 +1,11 @@
+{
+    "webElements": [
+        {
+            "name": "Cartel Transaccion Aceptada",
+            "byType": "xpath",
+            "definition": "//h1[.='Transacción aceptada']",
+            "frame": "default",
+            "specialInstr": "NA"
+        }
+    ]
+}

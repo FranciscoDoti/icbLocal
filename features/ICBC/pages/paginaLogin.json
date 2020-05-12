@@ -1,0 +1,25 @@
+{
+    "webElements": [ 
+        {
+            "name": "Usuario",
+            "byType": "xpath",
+            "definition": "//input[@id='username']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Contraseña",
+            "byType": "xpath",
+            "definition": "//input[@id='password']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Log In",
+            "byType": "xpath",
+            "definition": "//button[.='INGRESAR']",
+            "frame": "default",
+            "specialInstr": "NA"
+        }
+    ]
+}

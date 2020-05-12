@@ -1,0 +1,40 @@
+{
+    "app": {
+      "environment": "uat",
+      "stack": ""
+    },
+    "selenium": {
+      "browser": "chrome",
+      "headless": false,
+      "timeout": 30,
+      "grid": null
+    },
+    "cucumber": {
+      "screenshots": "onfail",
+      "timeout": 30
+    },
+    "testrail": {
+      "upload_results": false,
+      "suite_name": "UI - Automation",
+      "user": {
+        "host": "https://mnv.testrail.com/",
+        "user": "thomas.dsilva.contractor@macmillan.com",
+        "password": "TGGrc8fivHIXstF9IBEQ-PcBWUGffb6JLFPj9bbO1"
+      }
+    },
+    "grids": {
+      "dev-swarm": "https://dev-qa-zalenium.mldev.cloud",
+      "docker": "http://chrome.local-mml.cloud:4444",
+      "browserstack": "http://hub-cloud.browserstack.com",
+      "local": "http://localhost:4444"
+    },
+    "_examples": {
+      "environment": "local | dev int | pre-prod | prod",
+      "grid": "*null | docker | browserstack | local | dev-swarm",
+      "browser": "chrome | firefox",
+      "headless": "true | false",
+      "screenshots": "always | onfail | never",
+      "timeout": "Number-in-seconds, 30 to avoid Gateway timeout on remote",
+      "grids": "[array of selenium servers]"
+    }
+  }

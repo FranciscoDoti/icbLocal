@@ -1,0 +1,117 @@
+{
+    "webElements": [
+        {
+            "name": "Button",
+            "byType": "xpath",
+            "definition": "//*[.='<ReplaceText>']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "username",
+            "byType": "id",
+            "definition": "username",
+            "frame": "default",
+            "specialInstr": "overwrite"
+        },
+        {
+            "name": "password",
+            "byType": "id",
+            "definition": "password",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "signOut",
+            "byType": "css",
+            "definition": "[data-test-id='menu_user_sign_out']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "togglerMenu",
+            "byType": "css",
+            "definition": "[data-test-id='user_dropdown_menu_open']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "submit",
+            "byType": "xpath",
+            "definition": "//input[@value='Log In']",
+            "frame": "default",
+            "specialInstr": "focus"
+        },
+        {
+            "name": "signin",
+            "byType": "id",
+            "definition": "signin",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "username-local",
+            "byType": "id",
+            "definition": "div#username > input",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "password-local",
+            "byType": "id",
+            "definition": "div#password > input",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "submit-local",
+            "byType": "id",
+            "definition": "div#submit > input",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "amslink",
+            "byType": "id",
+            "definition": "body > ul > li:nth-child(1) > a",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "User Menu Button",
+            "byType": "xpath",
+            "definition": "//button[@id='user_menu']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Logout",
+            "byType": "xpath",
+            "definition": "//a[.='logout']",
+            "frame": "default",
+            "specialInstr": "NA"           
+        },
+        {
+            "name": "email",
+            "byType": "id",
+            "definition": "email",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "loginForm",
+            "byType": "id",
+            "definition": "loginForm",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "signinButton",
+            "byType": "id",
+            "definition": "signinButton",
+            "frame": "default",
+            "specialInstr": "NA"
+        }
+
+    ]
+}

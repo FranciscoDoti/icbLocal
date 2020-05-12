@@ -1,0 +1,46 @@
+{
+    "webElements": [
+        {
+            "name": "NroTarjeta",
+            "byType": "xpath",
+            "definition": "//input[@data-decidir='card_number']",
+            "frame": "default",
+            "specialInstr": "overwrite"
+        },
+        {
+            "name": "Vencimiento",
+            "byType": "xpath",
+            "definition": "//input[@name='CardExpirationDate']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Nombre",
+            "byType": "xpath",
+            "definition": "//input[@data-decidir='card_holder_name']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Codigo",
+            "byType": "xpath",
+            "definition": "//input[@data-decidir='security_code']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "NroDocumento",
+            "byType": "xpath",
+            "definition": "//input[@data-decidir='card_holder_doc_number']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Pagar",
+            "byType": "xpath",
+            "definition": "//button[@id='Submit']",
+            "frame": "default",
+            "specialInstr": "NA"
+        }
+    ]
+}

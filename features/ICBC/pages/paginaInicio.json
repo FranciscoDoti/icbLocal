@@ -1,0 +1,62 @@
+{
+    "webElements": [
+        {
+            "name": "Buscar",
+            "byType": "xpath",
+            "definition": "//input [@id='search_query_top']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Lupita",
+            "byType": "xpath",
+            "definition": "//button[@class='btn-search']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Producto",
+            "byType": "xpath",
+            "definition": "//ul[@id='app-view']/li[1]//a",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        
+
+        {
+            "name": "Comprar",
+            "byType": "xpath",
+            "definition": "//button[@class='btn btn-comprar']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Aceptar",
+            "byType": "xpath",
+            "definition": "//div[@id='uniform-cgv']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Caja",
+            "byType": "xpath",
+            "definition": "//button[@name='processCarrier']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "TarjetaCredito",
+            "byType": "xpath",
+            "definition": "//a[.='Tarjeta de crédito']",
+            "frame": "default",
+            "specialInstr": "NA"
+        },
+        {
+            "name": "Pagar",
+            "byType": "xpath",
+            "definition": "//button[@class='btn btn-primary btn-lg btn-payment-store btn-xs-block']",
+            "frame": "default",
+            "specialInstr": "NA"
+        }
+    ]
+}

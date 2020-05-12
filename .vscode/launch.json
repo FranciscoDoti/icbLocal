@@ -1,0 +1,75 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "name": "Sac-Grading-HW",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber-js",
+            "args": [
+                "${workspaceRoot}/features/ASSESSMENT/tests/sac/sac-grading-matrix-hw-policy.feature"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "name": "Multiple Select",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber-js",
+            "args": [
+                "${workspaceRoot}/features/ASSESSMENT/tests/ams/raptor/multiple-select.feature"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "name": "PROVISORIA",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber-js",
+            "args": [
+                "${workspaceRoot}/features/ASSESSMENT/tests/ams/raptor/FEATURE-PROVISORIA.feature"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "name": "Tinder",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber-js",
+            "args": [
+                "${workspaceRoot}/features/Tinder/tests/Likes.feature"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "name": "ICBC",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber-js",
+            "args": [
+                "${workspaceRoot}/features/ICBC/tests/"
+            ],
+        }
+
+        
+    ]
+}
