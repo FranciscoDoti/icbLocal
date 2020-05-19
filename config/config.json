@@ -1,6 +1,6 @@
 {
     "environment": "uat",
-    "mode": "localgrid",
+    "mode": "hub",
     "browser": "chrome",
     "headless": false,
     "screenshots": "onFail",
