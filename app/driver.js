@@ -93,7 +93,7 @@ const buildDriver = function() {
       //driver.usingServer('http://bd34eee6.ngrok.io/wd/hub/')
       break;
     case "hub":
-      driver.usingServer('https://16e93fe6.ngrok.io/wd/hub')
+      driver.usingServer('https://b3f96ad9.ngrok.io/wd/hub')
   }
   return driver.build();
 };
