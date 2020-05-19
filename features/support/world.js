@@ -13,9 +13,9 @@ const config = require(`${process.cwd()}/config/config.json`);
 
 
 const environment = (argv.env || config.environment);
-const stack = (argv.stack || rc.app.stack || argv.env || config.environment);
+//const stack = (argv.stack || rc.app.stack || argv.env || config.environment);
 
-const users = () => {
+/*const users = () => {
   const that = {};
   const folder = `${process.cwd()}/features/shared/data/users/${environment}`; //TODO: CORREGIR LA CARPETA DE USERS
   const files = fs.readdirSync(folder);
@@ -24,24 +24,24 @@ const users = () => {
     that[`${path.parse(filepath).name}`] = jsonfile.readFileSync(filepath);
   });
   return that;
-};
+};*/
 
 function ThisWorld({ attach }) {
 
 
   this.environment = environment;
-  this.stack = stack;
+  //this.stack = stack;
 
   this.urls = jsonfile.readFileSync(`${process.cwd()}/features/.urls/web.json`);
-  this.users = users();
+  //this.users = users();
   this.url = null;
   this.apiserver = null;
 
   this.data = new Map();
   this.downloadLocation = `${process.cwd()}/reports/downloads`;
 
-  setDefaultTimeout(40 * rc.cucumber.timeout * 1000);
-  this.screenshots = rc.cucumber.screenshots;
+  setDefaultTimeout(40 * config.timeout * 1000);
+  this.screenshots = config.screenshots;
   this.attach = attach;
 }
 
@@ -62,20 +62,20 @@ setDefinitionFunctionWrapper((fn) => {
 
 function updateMetadata () {
   const reportPath = argv.f !== undefined ? (argv.f.indexOf('json:') > -1 ? (`${process.cwd()}/${(argv.f).split(':')[1]}`) : undefined) : undefined;
-  /*if (reportPath !== undefined) {
+  if (reportPath !== undefined) {
     const metadata = {
       Browser: config.capabilities.get('browserName').toUpperCase(),
       'Browser Version': config.capabilities.get('browserVersion').toUpperCase(),
       Platform: config.capabilities.get('platformName').toUpperCase(),
       Environment: environment.toUpperCase(),
-      Stack: stack.toUpperCase(),
       Grid: config.grid.toUpperCase(),
       'Date Time': `${config.datetime.split('T')[0]} ${config.datetime.split('T')[1].split('.')[0]}`,
-    };*/
+    };
     const contents = jsonfile.readFileSync(reportPath);
     contents[0].metadata = metadata;
     jsonfile.writeFileSync(reportPath, contents);
   }
+};
 
 
 /*async function testRailUpload () {
